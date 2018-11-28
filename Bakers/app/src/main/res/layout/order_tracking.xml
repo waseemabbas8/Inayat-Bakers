@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D59300">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="0dp"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imageView3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tvName"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:text="Price"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintLeft_toRightOf="@id/imageView3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/tvPrice2"
+        android:layout_marginRight="10dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

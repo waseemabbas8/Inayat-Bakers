@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName7"
+        android:text="Name"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/imageView7"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPrice7"
+        android:text="Price"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvName7"
+        app:layout_constraintLeft_toRightOf="@id/imageView7"
+        android:layout_marginLeft="8dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvQuantity7"
+        android:text="Quantity"
+        app:layout_constraintTop_toBottomOf="@id/tvPrice7"
+        app:layout_constraintLeft_toRightOf="@id/imageView7"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="8dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTotal7"
+        android:text="Total Price"
+        app:layout_constraintTop_toBottomOf="@id/tvQuantity7"
+        app:layout_constraintLeft_toRightOf="@id/imageView7"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000"
+        />
+</android.support.constraint.ConstraintLayout>
